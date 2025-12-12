@@ -105,9 +105,10 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
-</body><!-- Floating Website Creator Badge with Hover + Dark/Light Support -->
-<style><style>
+<script src="script.js"></script>
+
+<!-- Neon CCTV Background + Creator Badge -->
+<style>
   body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -116,12 +117,10 @@
       radial-gradient(circle at 80% 30%, rgba(0,180,255,0.18), transparent 40%),
       radial-gradient(circle at 50% 80%, rgba(0,255,120,0.12), transparent 45%),
       linear-gradient(135deg, #020617, #04131a, #020617);
-    background-size:cover;
     background-attachment:fixed;
     color:#ffffff;
   }
 
-  /* Neon grid effect (CCTV vibe) */
   body::before{
     content:'';
     position:fixed;
@@ -145,7 +144,6 @@
     z-index:-1;
   }
 
-  /* 🌞 Light mode version */
   body.light-mode{
     background:
       radial-gradient(circle at 30% 20%, rgba(0,255,170,0.25), transparent 45%),
@@ -153,7 +151,7 @@
       linear-gradient(135deg, #ecfeff, #e0f2fe);
     color:#0f172a;
   }
-</style>
+
   .creator-badge{
     position:fixed;
     left:12px;
@@ -167,14 +165,28 @@
     font-family:Arial, sans-serif;
     font-size:13px;
     color:#ffffff;
-    transition:transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    transition:all 0.3s ease;
   }
 
-  /* Hover animation */
   .creator-badge:hover{
     transform:translateY(-6px) scale(1.04);
     box-shadow:0 12px 30px rgba(0,184,148,0.35);
   }
 
-  .creator-badge .title{
-    font-size:12px;
+  .creator-badge .title{font-size:12px;opacity:0.7;}
+  .creator-badge .name{font-weight:700;margin:4px 0 6px;}
+  .creator-badge .icons{display:flex;gap:12px;}
+  .creator-badge .icons a{font-size:18px;text-decoration:none;}
+</style>
+
+<div class="creator-badge">
+  <div class="title">Website by</div>
+  <div class="name">Piyush Goswami</div>
+  <div class="icons">
+    <a href="https://www.instagram.com/official_piyush_goswamy?igsh=MWR3eWR1OHoxYW45Zw==" target="_blank" style="color:#e1306c;">📸</a>
+    <a href="https://wa.me/919916905568" target="_blank" style="color:#25d366;">💬</a>
+  </div>
+</div>
+
+</body>
+</html>
