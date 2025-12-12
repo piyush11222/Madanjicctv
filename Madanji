@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madan Purohit CCTV Service</title>
+  <meta name="description" content="CCTV camera sales, installation, repair and maintenance — Contact Madan Purohit via WhatsApp or Call: +91 99806 08544" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#04131a; --card:#071826; --accent:#00b894; --accent-2:#ff7a59; --muted:#9fb3bd; --glass:rgba(255,255,255,0.03); --white:#f8fafc;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--white);background:radial-gradient(1200px 400px at 10% 10%, rgba(0,184,148,0.06), transparent 10%), linear-gradient(180deg,#021018 0%, #04131a 100%)}
+    .wrap{max-width:1100px;margin:20px auto;padding:18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#016064);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+    h1{margin:0;font-size:20px}
+    .tag{color:var(--muted);font-size:13px}
+    .hero{display:grid;grid-template-columns:1fr;gap:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:14px;margin-top:16px;box-shadow:0 6px 30px rgba(2,12,17,0.6)}
+    .hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .headline{font-size:22px;margin:0 0 6px}
+    .sub{color:var(--muted);margin:0}
+    .cta{display:flex;gap:10px;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none}
+    .btn-call{background:linear-gradient(90deg,#0ea5a4,#0284c7);color:#051018}
+    .btn-wa{background:linear-gradient(90deg,#25d366,#06b463);color:#051018}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+    @media(min-width:900px){.grid{grid-template-columns:2fr 380px}}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .muted{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .service-item{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:10px;border-radius:10px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .brand-logos{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .brand-logos .b{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:8px;font-weight:700}
+    .aside .contact{display:flex;flex-direction:column;gap:10px}
+    .sticky-contact{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:60}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;display:flex;align-items:center;gap:10px}
+    .price-list li{margin:8px 0}
+    .features{display:flex;flex-direction:column;gap:10px}
+    .feature{display:flex;gap:10px;align-items:flex-start}
+    .feature .ico{width:44px;height:44;border-radius:10px;background:linear-gradient(135deg,var(--accent-2),#ffbba8);display:flex;align-items:center;justify-content:center;font-weight:700;color:#081018}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    .hero-image{border-radius:10px;overflow:hidden;height:180px}
+    .hero-image img{width:100%;height:100%;object-fit:cover;filter:brightness(0.6) saturate(1.05)}
+    .testimonial{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MP</div>
+        <div>
+          <h1>Madan Purohit</h1>
+          <div class="tag">Trusted CCTV Sales • Installation • Repair</div>
+        </div>
+      </div>
+      <div class="pill"><div class="muted">Call / WhatsApp</div><div style="font-weight:700;margin-left:6px">+91 99806 08544</div></div>
+    </header><section class="hero">
+  <div class="hero-top">
+    <div>
+      <h2 class="headline">Protect what matters — professional CCTV solutions</h2>
+      <p class="sub">Installation, remote viewing setup, repairs, and maintenance. Fast, local service — contact by WhatsApp or Call only.</p>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:+919980608544">📞 Call</a>
+        <a class="btn btn-wa" href="https://wa.me/919980608544?text=Hello%20Madan%20Purohit%20CCTV%20Service%2C%20I%20need%20a%20quote" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-image" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d577334d0?w=1400" alt="CCTV camera installation" />
+    </div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <h3 style="margin-top:0">Our Services</h3>
+        <div class="services">
+          <div class="service-item">📷 Camera supply & sales (analog & IP)</div>
+          <div class="service-item">🔧 Professional installation & cabling</div>
+          <div class="service-item">🖥️ DVR / NVR setup & remote viewing</div>
+          <div class="service-item">🛠️ Repairs, upgrades & maintenance</div>
+        </div>
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 6px">Why choose us</h4>
+          <div class="features">
+            <div class="feature"><div class="ico">⚡</div><div><strong>Quick response</strong><div class="muted small">On-site visits and same-day service where possible</div></div></div>
+            <div class="feature"><div class="ico">🔒</div><div><strong>Secure setup</strong><div class="muted small">We configure secure remote access and strong passwords</div></div></div>
+            <div class="feature"><div class="ico">💡</div><div><strong>Transparent pricing</strong><div class="muted small">Clear estimates after site photos or visit</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">FAQ</h3>
+        <div class="muted"><strong>Q:</strong> Do you visit for quotes?</div>
+        <div class="small">A: Yes — send site photos on WhatsApp or book a visit to get an on-site quote.</div>
+        <div style="height:8px"></div>
+        <div class="muted"><strong>Q:</strong> Do you provide warranties?</div>
+        <div class="small">A: We offer manufacturer warranties on parts and a service warranty on installations.</div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Gallery — Real CCTV photos</h3>
+        <div class="gallery" aria-hidden="true">
+          <!-- High-quality free images (Unsplash / Pexels) -->
+          <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900f4?w=1200&q=80&auto=format&fit=crop" alt="cctv mounted" />
+          <img src="https://images.unsplash.com/photo-1593946460607-5f2e4e90c7ed?w=1200&q=80&auto=format&fit=crop" alt="cctv closeup" />
+          <img src="https://images.unsplash.com/photo-1559136653-1b6a1f4b0e1c?w=1200&q=80&auto=format&fit=crop" alt="nvr rack" />
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d577334d0?w=1200&q=80&auto=format&fit=crop" alt="installation" />
+          <img src="https://images.unsplash.com/photo-1601134467661-3d5e3f94a639?w=1200&q=80&auto=format&fit=crop" alt="camera night view" />
+          <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80&auto=format&fit=crop" alt="surveillance" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop" alt="cctv building" />
+          <img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=1200&q=80&auto=format&fit=crop" alt="camera lens" />
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80&auto=format&fit=crop" alt="security monitor" />
+        </div>
+        <div class="muted" style="margin-top:8px">All photos are free stock images used for representation. Send your site photos on WhatsApp for an accurate quote.</div>
+      </div>
+
+    </div>
+
+    <aside class="aside">
+      <div class="card contact">
+        <h3 style="margin-top:0">Contact</h3>
+        <div class="muted">Phone / WhatsApp only</div>
+        <div style="font-weight:800;font-size:18px;margin:8px 0">+91 99806 08544</div>
+        <a class="btn btn-wa" href="https://wa.me/919980608544?text=Hello%20Madan%20Purohit%20CCTV%20Service%2C%20I%20want%20a%20quote" target="_blank" rel="noopener">💬 Message on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+919980608544" style="margin-top:8px">📞 Call Now</a>
+        <div class="muted" style="margin-top:10px">No social media accounts. We respond only via phone & WhatsApp.</div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Brands we work with</h3>
+        <div class="brand-logos">
+          <div class="b">Hikvision</div>
+          <div class="b">Dahua</div>
+          <div class="b">CP PLUS</div>
+          <div class="b">Axis Communications</div>
+          <div class="b">Bosch</div>
+          <div class="b">Hanwha Techwin</div>
+          <div class="b">Uniview</div>
+          <div class="b">Panasonic</div>
+          <div class="b">Godrej</div>
+        </div>
+        <div class="muted small" style="margin-top:8px">If you prefer a different brand, tell us and we'll source it.</div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin-top:0">Indicative Pricing</h3>
+        <ul class="price-list muted">
+          <li>Basic camera + install — ₹2,500+</li>
+          <li>4-camera system (mid-range) — ₹18,000+</li>
+          <li>Professional NVR systems — from ₹25,000+</li>
+          <li>Repairs / labour — depends on work</li>
+        </ul>
+        <div class="muted small">Final pricing after site photos or visit.</div>
+      </div>
+
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="muted">Contact by Call or WhatsApp only — +91 99806 08544</div>
+  <div class="muted" style="margin-top:6px">© Madan Purohit CCTV Service</div>
+</footer>
+
+  </div>  <div class="sticky-contact" aria-hidden="true">
+    <a class="btn btn-wa" href="https://wa.me/919980608544?text=Hello%20Madan%20Purohit%20CCTV%20Service" target="_blank" rel="noopener">💬</a>
+    <a class="btn btn-call" href="tel:+919980608544">📞</a>
+  </div>
+</body>
+</html>
