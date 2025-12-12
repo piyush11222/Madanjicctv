@@ -1,193 +1,215 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Madan Purohit CCTV Service</title>
-  <meta name="description" content="CCTV camera sales, installation, repair and maintenance — Contact Madan Purohit via WhatsApp or Call: +91 99806 08544" />
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madan Purohit CCTV Service</title>
+
+<meta name="description" content="CCTV camera installation, repair & maintenance. Call or WhatsApp +91 99806 08544">
+
+<style>
+/* ========== BASE & NEON BACKGROUND ========== */
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0,255,170,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,180,255,0.18), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(0,255,120,0.12), transparent 45%),
+    linear-gradient(135deg, #020617, #04131a, #020617);
+  background-attachment:fixed;
+  color:#ffffff;
+}
+
+/* CCTV GRID */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+    repeating-linear-gradient(to right, rgba(0,255,170,0.04) 0 1px, transparent 1px 80px),
+    repeating-linear-gradient(to bottom, rgba(0,180,255,0.04) 0 1px, transparent 1px 80px);
+  pointer-events:none;
+  z-index:-1;
+}
+
+/* CCTV SCAN LINE */
+body::after{
+  content:'';
+  position:fixed;
+  top:-100%;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(to bottom, transparent, rgba(0,255,170,0.08), transparent);
+  animation:cctvScan 6s linear infinite;
+  pointer-events:none;
+}
+@keyframes cctvScan{
+  0%{top:-100%}
+  100%{top:100%}
+}
+
+/* LIGHT MODE */
+body.light-mode{
+  background:
+    radial-gradient(circle at 30% 20%, rgba(0,255,170,0.25), transparent 45%),
+    radial-gradient(circle at 70% 40%, rgba(0,180,255,0.25), transparent 45%),
+    linear-gradient(135deg, #ecfeff, #e0f2fe);
+  color:#0f172a;
+}
+
+/* ========== LAYOUT ========== */
+.wrap{max-width:1100px;margin:auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:14px}
+.right{display:flex;align-items:center;gap:10px}
+
+.hero{text-align:center;padding:40px 10px}
+.hero h2{margin-bottom:10px}
+
+/* ========== LOGO (AUTO FACE CENTER) ========== */
+.logo{
+  width:64px;height:64px;border-radius:50%;
+  overflow:hidden;background:#000;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 18px rgba(0,255,170,.7);
+  color:#00ffae;font-weight:800;
+}
+.logo img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 25%;
+}
+
+/* ========== BUTTONS ========== */
+.btn{
+  padding:10px 14px;border:none;border-radius:30px;
+  background:#071826;color:#00ffae;
+  cursor:pointer;font-size:14px;
+  box-shadow:0 0 15px rgba(0,255,170,.6);
+}
+.btn:hover{transform:scale(1.05)}
+
+.btn-call{background:#0ea5a4;color:#000}
+.btn-wa{background:#25d366;color:#000}
+
+/* ========== CARDS (NEON GLOW) ========== */
+.card{
+  background:rgba(7,24,38,.85);
+  padding:16px;border-radius:16px;
+  margin-bottom:16px;
+  transition:.3s;
+}
+.card:hover{
+  box-shadow:0 0 25px rgba(0,255,170,.45),
+             inset 0 0 12px rgba(0,255,170,.25);
+  transform:translateY(-4px);
+}
+
+/* ========== CREATOR BADGE ========== */
+.creator-badge{
+  position:fixed;left:12px;bottom:12px;
+  background:rgba(7,24,38,.95);
+  padding:12px 14px;border-radius:14px;
+  font-size:13px;z-index:9999;
+  box-shadow:0 8px 22px rgba(0,0,0,.45);
+  transition:.3s;
+}
+.creator-badge:hover{
+  transform:translateY(-6px) scale(1.04);
+  box-shadow:0 12px 30px rgba(0,184,148,.35);
+}
+
+/* ========== MOBILE ========== */
+@media(max-width:768px){
+  header{flex-direction:column;text-align:center}
+  .right{justify-content:center}
+  .creator-badge{bottom:80px}
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">
-  <img src="logo.png" alt="Madan Purohit CCTV Logo">
-        </div>
-          <h1>Madan Purohit</h1>
-          <div class="tag">Trusted CCTV Sales • Installation • Repair</div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="pill"><div class="muted">Call / WhatsApp</div><div class="phone">+91 99806 08544</div></div>
-        <button class="btn btn-share" id="shareBtn">🔗 Share</button>
-      </div>
-    </header>
 
-    <section class="hero">
-      <div class="hero-top">
-        <div>
-          <h2 class="headline">Protect what matters — professional CCTV solutions</h2>
-          <p class="sub">Installation, remote viewing setup, repairs, and maintenance. Fast, local service — contact by WhatsApp or Call only.</p>
-          <div class="cta">
-            <a class="btn btn-call" href="tel:+919980608544">📞 Call</a>
-            <a class="btn btn-wa" href="https://wa.me/919980608544?text=Hello%20Madan%20Purohit%20CCTV%20Service%2C%20I%20need%20a%20quote" target="_blank" rel="noopener">💬 WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1590490360182-c33d577334d0?w=1400&q=80&auto=format&fit=crop" alt="CCTV camera installation">
-        </div>
-      </div>
+<div class="wrap">
 
-      <div class="grid">
-        <main>
-          <div class="card">
-            <h3>Our Services</h3>
-            <div class="services">
-              <div class="service-item">📷 Camera supply & sales (analog & IP)</div>
-              <div class="service-item">🔧 Professional installation & cabling</div>
-              <div class="service-item">🖥️ DVR / NVR setup & remote viewing</div>
-              <div class="service-item">🛠️ Repairs, upgrades & maintenance</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Gallery — Real CCTV photos</h3>
-            <div class="gallery">
-              <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900f4?w=1200&q=80&auto=format&fit=crop" alt="cctv mounted">
-              <img src="https://images.unsplash.com/photo-1593946460607-5f2e4e90c7ed?w=1200&q=80&auto=format&fit=crop" alt="cctv closeup">
-              <img src="https://images.unsplash.com/photo-1559136653-1b6a1f4b0e1c?w=1200&q=80&auto=format&fit=crop" alt="nvr rack">
-            </div>
-          </div>
-        </main>
-
-        <aside>
-          <div class="card contact">
-            <h3>Contact</h3>
-            <div class="muted">Phone / WhatsApp only</div>
-            <div class="big">+91 99806 08544</div>
-            <a class="btn btn-wa" href="https://wa.me/919980608544?text=Hello%20Madan%20Purohit%20CCTV%20Service%2C%20I%20want%20a%20quote" target="_blank">💬 Message on WhatsApp</a>
-            <a class="btn btn-call" href="tel:+919980608544">📞 Call Now</a>
-          </div>
-
-          <div class="card">
-            <h3>Brands we work with</h3>
-            <div class="brand-logos">
-              <span>Hikvision</span>
-              <span>Dahua</span>
-              <span>CP PLUS</span>
-              <span>Axis</span>
-              <span>Bosch</span>
-              <span>Hanwha</span>
-              <span>Uniview</span>
-              <span>Panasonic</span>
-              <span>Godrej</span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <footer>
-      <div class="muted">Contact by Call or WhatsApp only — +91 99806 08544</div>
-      <div class="muted">© Madan Purohit CCTV Service</div>
-    </footer>
-  </div>
-
-  <div id="shareModal" class="modal" aria-hidden="true">
-    <div class="box">
-      <h3>Share this business</h3>
-      <input id="siteUrl" class="input" readonly>
-      <div class="actions">
-        <button id="waShare" class="btn btn-wa">💬 Share on WhatsApp</button>
-        <button id="copyLink" class="btn">📋 Copy link</button>
-        <button id="closeModal" class="btn">Close</button>
-      </div>
+<header>
+  <div class="brand">
+    <div class="logo">
+      <img src="logo.png" alt="Logo"
+       onerror="this.style.display='none';this.parentElement.innerHTML='MP'">
+    </div>
+    <div>
+      <h1>Madan Purohit</h1>
+      <div>Trusted CCTV Services</div>
     </div>
   </div>
 
-<script src="script.js"></script>
+  <div class="right">
+    <a class="btn btn-call" href="tel:+919980608544">📞 Call</a>
+    <a class="btn btn-wa" href="https://wa.me/919980608544">💬 WhatsApp</a>
+  </div>
+</header>
 
-<!-- Neon CCTV Background + Creator Badge -->
-<style>
-  body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:
-      radial-gradient(circle at 20% 20%, rgba(0,255,170,0.15), transparent 40%),
-      radial-gradient(circle at 80% 30%, rgba(0,180,255,0.18), transparent 40%),
-      radial-gradient(circle at 50% 80%, rgba(0,255,120,0.12), transparent 45%),
-      linear-gradient(135deg, #020617, #04131a, #020617);
-    background-attachment:fixed;
-    color:#ffffff;
-  }
+<section class="hero">
+  <h2>Protect What Matters</h2>
+  <p>Professional CCTV Installation & Maintenance</p>
+</section>
 
-  body::before{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:
-      repeating-linear-gradient(
-        to right,
-        rgba(0,255,170,0.04) 0,
-        rgba(0,255,170,0.04) 1px,
-        transparent 1px,
-        transparent 80px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        rgba(0,180,255,0.04) 0,
-        rgba(0,180,255,0.04) 1px,
-        transparent 1px,
-        transparent 80px
-      );
-    pointer-events:none;
-    z-index:-1;
-  }
+<div class="card">
+  <h3>Services</h3>
+  <p>Installation • Repair • DVR / NVR Setup • Maintenance</p>
+</div>
 
-  body.light-mode{
-    background:
-      radial-gradient(circle at 30% 20%, rgba(0,255,170,0.25), transparent 45%),
-      radial-gradient(circle at 70% 40%, rgba(0,180,255,0.25), transparent 45%),
-      linear-gradient(135deg, #ecfeff, #e0f2fe);
-    color:#0f172a;
-  }
+<footer class="card">
+  © Madan Purohit CCTV Service
+</footer>
 
-  .creator-badge{
-    position:fixed;
-    left:12px;
-    bottom:12px;
-    z-index:9999;
-    background:rgba(7,24,38,0.95);
-    backdrop-filter:blur(6px);
-    border-radius:14px;
-    padding:12px 14px;
-    box-shadow:0 8px 22px rgba(0,0,0,0.45);
-    font-family:Arial, sans-serif;
-    font-size:13px;
-    color:#ffffff;
-    transition:all 0.3s ease;
-  }
+</div>
 
-  .creator-badge:hover{
-    transform:translateY(-6px) scale(1.04);
-    box-shadow:0 12px 30px rgba(0,184,148,0.35);
-  }
-
-  .creator-badge .title{font-size:12px;opacity:0.7;}
-  .creator-badge .name{font-weight:700;margin:4px 0 6px;}
-  .creator-badge .icons{display:flex;gap:12px;}
-  .creator-badge .icons a{font-size:18px;text-decoration:none;}
-</style>
-
+<!-- CREATOR BADGE -->
 <div class="creator-badge">
-  <div class="title">Website by</div>
-  <div class="name">Piyush Goswami</div>
-  <div class="icons">
-    <a href="https://www.instagram.com/official_piyush_goswamy?igsh=MWR3eWR1OHoxYW45Zw==" target="_blank" style="color:#e1306c;">📸</a>
-    <a href="https://wa.me/919916905568" target="_blank" style="color:#25d366;">💬</a>
+  <div>Website by <b>Piyush Goswami</b></div>
+  <div style="margin-top:6px">
+    <a href="https://www.instagram.com/official_piyush_goswamy" target="_blank">📸</a>
+    <a href="https://wa.me/919916905568" target="_blank">💬</a>
   </div>
 </div>
+
+<!-- TOGGLES -->
+<button id="themeToggle" class="btn" style="position:fixed;right:14px;bottom:14px">🌙</button>
+<button id="soundToggle" class="btn" style="position:fixed;right:14px;bottom:70px">🔇</button>
+
+<audio id="cctvSound" src="cctv-beep.mp3"></audio>
+
+<script>
+const themeBtn=document.getElementById('themeToggle');
+const soundBtn=document.getElementById('soundToggle');
+const sound=document.getElementById('cctvSound');
+
+if(localStorage.theme==='light')document.body.classList.add('light-mode');
+
+themeBtn.onclick=()=>{
+  document.body.classList.toggle('light-mode');
+  localStorage.theme=document.body.classList.contains('light-mode')?'light':'dark';
+};
+
+soundBtn.onclick=()=>{
+  if(localStorage.sound==='on'){
+    localStorage.sound='off';soundBtn.innerText='🔇';
+  }else{
+    localStorage.sound='on';soundBtn.innerText='🔊';
+    sound.currentTime=0;sound.play();
+  }
+};
+
+setInterval(()=>{
+  if(localStorage.sound==='on'){
+    sound.currentTime=0;sound.play();
+  }
+},6000);
+</script>
 
 </body>
 </html>
