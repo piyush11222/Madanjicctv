@@ -1,0 +1,30 @@
+:root{--bg:#04131a;--card:#071826;--accent:#00b894;--muted:#9fb3bd;--white:#f8fafc}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#021018,#04131a);color:var(--white)}
+.wrap{max-width:1100px;margin:20px auto;padding:18px}
+header{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64;border-radius:12px;background:linear-gradient(135deg,var(--accent),#016064);display:flex;align-items:center;justify-content:center;font-weight:800}
+.pill{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;display:flex;gap:8px;align-items:center}
+.tag{color:var(--muted)}
+.hero{margin-top:16px}
+.hero-top{display:flex;gap:12px;align-items:center}
+.headline{font-size:22px;margin:0}
+.sub{color:var(--muted)}
+.cta{display:flex;gap:10px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-call{background:linear-gradient(90deg,#0ea5a4,#0284c7);color:#051018}
+.btn-wa{background:linear-gradient(90deg,#25d366,#06b463);color:#051018}
+.btn-share{background:linear-gradient(90deg,#7c3aed,#a78bfa);color:#051018}
+.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+@media(min-width:900px){.grid{grid-template-columns:2fr 380px}}
+.card{background:var(--card);padding:16px;border-radius:12px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:10px}
+.brand-logos{display:flex;flex-wrap:wrap;gap:8px}
+.brand-logos span{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-weight:700}
+.contact .big{font-size:18px;font-weight:800;margin:8px 0}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}
+.modal .box{background:var(--card);padding:16px;border-radius:10px;width:90%;max-width:420px}
+.input{width:100%;padding:8px;border-radius:8px;border:0;background:rgba(255,255,255,0.03);color:var(--muted)}
